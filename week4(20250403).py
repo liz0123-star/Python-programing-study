@@ -51,7 +51,7 @@ for i in range(5):
     else:
         print('*' * 5)
 
-for i in range(1, 6):
+# for i in range(1, 6):
     
 
 

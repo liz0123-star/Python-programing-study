@@ -105,3 +105,72 @@ else:
     print('오후입니다.')
 
 #20
+i, j, k= map(int, input().split())
+if i >= j and i >= k:
+    print(i)
+
+elif j >= i and j >= k:
+    print(j)
+
+else:
+    print(k)
+
+#21
+l, m = map(int, input().split())
+
+if (l + m) % 2 == 0:
+    print('짝수입니다.')
+else:
+    print('홀수입니다.')
+
+#22
+n = int(input('숫자를 입력하세요.: '))
+
+if n % 3 == 0 and n % 5 == 0:
+    print('FizzBuzz')
+else:
+    print(n)
+
+#23
+o = int(input('연도를 입력하세요.: '))
+
+if o % 4 == 0 and o % 100 != 0 or o % 400 == 0:
+    print('윤년입니다.')
+
+else:
+    print('윤년이 아닙니다.')
+
+#24
+p, q = map(int, input().split())
+
+if p > q:
+    if p - q > 10:
+        print('차이가 10 이상입니다.')
+
+    else:
+        print('차이가 10 미만입니다.')
+    
+elif p < q:
+    if q - p > 10:
+        print('차이가 10 이상입니다.')
+
+    else:
+        print('차이가 10 미만입니다.')
+
+else:
+    print('두 수는 같습니다.')
+
+#25
+r, s, t = map(int, input().split())
+
+if r % 2 == 0 and s % 2 == 0 and t % 2 == 0:
+    print('모두 짝수입니다.')
+
+elif r % 2 != 0 and s % 2 != 0 and t % 2 != 0:
+    print('모두 홀수입니다.')
+
+elif r == 0 or s == 0 or t == 0:
+    print('0은 포함될 수 없습니다.')
+
+else:
+    print('홀수와 짝수가 섞여 있습니다.')
