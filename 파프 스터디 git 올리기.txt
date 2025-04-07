@@ -1,0 +1,11 @@
+echo "# Python-programing-study" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/liz0123-star/Python-programing-study.git
+git push -u origin main
+
+git add .
+git commit -m "first commit"
+git push origin master

@@ -16,10 +16,10 @@ print(a + b)
 #5
 c = int(input('정수1 입력: '))
 d = int(input('정수2 입력: '))
-print(c, '+', d, '=', c+d)
-print(c, '-', d, '=', c-d)
-print(c, '*', d, '=', c*d)
-print(c, '/', d, '=', int(c/d))
+print("%d + %d = %d" %(c, d, c+d))
+print("%d - %d = %d" %(c, d, c-d))
+print("%d * %d = %d" %(c, d, c*d))
+print("%d / %d = %d" %(c, d, int(c/d)))
 
 #6
 print("I am a student.\n *\n\t^^Nice to meet you~")
@@ -33,7 +33,7 @@ print("이름은 %s, 나이는 %d살, 키는 %dcm입니다." % (name, age, heigh
 
 #8
 e = int(input("정수 입력: "))
-print(e )
+print(e * 0.5)
 print(e ** 2)
 print(e ** 3)
 
@@ -47,10 +47,10 @@ print(e ** 3)
 #11-3
 
 #12
-#12-2
+#12-1
 
 #13
-#13-2
+#13-1
 
 #14
 #14-4
@@ -72,11 +72,36 @@ else:
 #17
 g = int(input("나이 입력: "))
 if g >= 18:
-    print('Adult')
+    print('성인입니다.')
 
 else:
-    print('Teen')
+    print('미성년자입니다.')
 
 
 #18
-h = int(input)
+h = int(input('점수를 입력하세요.: '))
+if h >= 90:
+    print('A')
+
+elif h >= 80 and h < 90:
+    print('B')
+
+elif h >= 70 and h < 80:
+    print('C')
+
+elif h >= 60 and h < 70:
+    print('D')
+
+else:
+    print('F')
+
+
+#19
+time = int(input('시간을 입력하세요.: '))
+if time < 12:
+    print('오전입니다.')
+
+else:
+    print('오후입니다.')
+
+#20
