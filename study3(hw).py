@@ -29,9 +29,16 @@ while True:
 price = int(input("물건 값을 입력: "))
 cash = int(input("받은 금액: "))
 
+# res=cash-price
+# for i in [500,100,10,1]:
+#     n=res//i
+#     print(n)
+#     res-=n*i
+
 five = (cash - price) // 500
+cash = ((cash - (five * 500)))
 hund = (cash - price) // 100
-cash = ((cash - (five * 500)) - (hund * 100))
+cash = (cash - (hund * 100))
 ten = (cash - price) // 10
 cash = (cash - (ten * 10))
 one = (cash - price) // 1
@@ -67,7 +74,6 @@ if res == 'A':
             print('O', end='')
         elif A[i] not in answer:
             print('X', end='')
-
 
 if res == 'B': 
     for i in range(len(B)):
